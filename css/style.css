@@ -1,0 +1,51 @@
+body {
+  font-family: "Tektur";
+}
+
+.header-bar {
+  text-align: center;
+  font-weight: 650;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-family: "Lobster";
+}
+
+.board {
+  display: grid;
+  grid-template-rows: 75px 75px 75px;
+  grid-template-columns: 75px 75px 75px;
+  gap: 5px;
+  column-gap: 5px;
+  justify-content: center;
+}
+
+.board div {
+  border: 2px solid black;
+  height: 75px;
+  flex: 1 1 auto;
+  background: white;
+}
+
+.game-restart {
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+
+.restart-btn {
+  border: none;
+  cursor: pointer;
+  font-family: 'Tektur';
+  font-weight: 300;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  color: red;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
