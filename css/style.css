@@ -14,10 +14,39 @@ body {
   display: grid;
   grid-template-rows: 75px 75px 75px;
   grid-template-columns: 75px 75px 75px;
-  gap: 5px;
-  column-gap: 5px;
   justify-content: center;
+  align-items: center;
 }
+
+.board-cell:first-child,
+.board-cell:nth-child(2),
+.board-cell:nth-child(3) {
+  border-top: none;
+}
+
+.board-cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.board-cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.board-cell:last-child,
+.board-cell:nth-child(8),
+.board-cell:nth-child(7) {
+  border-bottom: none;
+}
+
+/* .board-cell.x::before, */
+/* .board-cell.x::after { */
+/*   content: ''; */
+/*   width: 25px; */
+/*   height: 25px; */
+/*   background-color: black; */
+/* } */
+
+
 
 .board div {
   border: 2px solid black;
