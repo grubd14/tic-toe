@@ -10,6 +10,15 @@ body {
   font-family: "Lobster";
 }
 
+.board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 .board {
   display: grid;
   grid-template-rows: 75px 75px 75px;
@@ -38,14 +47,17 @@ body {
   border-bottom: none;
 }
 
-/* .board-cell.x::before, */
-/* .board-cell.x::after { */
-/*   content: ''; */
-/*   width: 25px; */
-/*   height: 25px; */
-/*   background-color: black; */
-/* } */
+.board-cell.x::before,
+.board-cell.x::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
 
+.board-cell:hover {
+  background-color: #e0e0e0;
+}
 
 
 .board div {
@@ -67,9 +79,9 @@ body {
   cursor: pointer;
   font-family: 'Tektur';
   font-weight: 300;
-  font-size: 22px;
+  font-size: 15px;
   padding: 10px 20px;
-  border-radius: 22px;
+  border-radius: 16px;
   color: red;
 }
 
